@@ -7,6 +7,7 @@
 //
 
 #import "TViewController.h"
+#import "RunLoopObserver.h"
 
 @interface TViewController ()
 {
@@ -24,13 +25,15 @@
     
     [NSThread detachNewThreadSelector:@selector(runOnNewThread1) toTarget:self withObject:nil];
     
+    [RunLoopObserver addRunLoopObserver:[NSRunLoop currentRunLoop]];
+    NSLog(@" run loop is %@",[NSRunLoop currentRunLoop]);
     while (!end) {
-        
         NSLog(@"runloop…");
-//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate distantFuture]];
+       BOOL flag = [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate distantFuture]];
+        NSLog(@"run flag is %d",flag);
         NSLog(@"runloop end.");
-        
+
     }
     
     NSLog(@"ok.");

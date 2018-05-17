@@ -9,10 +9,12 @@
 #import "ViewController.h"
 #import "TestThread.h"
 #import "TViewController.h"
+#import "Test2.h"
 
 @interface ViewController ()
 {
     TestThread *m_thread;
+    Test2 *m_test;
     BOOL mo;
 }
 @end
@@ -22,6 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    Test2 *t2 = [[Test2 alloc] init];
+    [t2 test];
+    
+//    m_test = [[Test2 alloc] init];
+//    [m_test test];
+    return;
     TViewController *tv = [[TViewController alloc] init];
     [self addChildViewController:tv];
     [self.view addSubview:tv.view];

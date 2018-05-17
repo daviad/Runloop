@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B98E7AF820AD18BB00B8EE03 /* RunLoopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E7AF720AD18BB00B8EE03 /* RunLoopObserver.m */; };
+		B98E7AFB20AD2B4200B8EE03 /* Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E7AFA20AD2B4200B8EE03 /* Test2.m */; };
 		E4753FB820AC6F9B0087A00B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4753FB720AC6F9B0087A00B /* AppDelegate.m */; };
 		E4753FBB20AC6F9B0087A00B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4753FBA20AC6F9B0087A00B /* ViewController.m */; };
 		E4753FBE20AC6F9B0087A00B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4753FBC20AC6F9B0087A00B /* Main.storyboard */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B98E7AF620AD18BB00B8EE03 /* RunLoopObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopObserver.h; sourceTree = "<group>"; };
+		B98E7AF720AD18BB00B8EE03 /* RunLoopObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopObserver.m; sourceTree = "<group>"; };
+		B98E7AF920AD2B4200B8EE03 /* Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2.h; sourceTree = "<group>"; };
+		B98E7AFA20AD2B4200B8EE03 /* Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2.m; sourceTree = "<group>"; };
 		E4753FB320AC6F9B0087A00B /* RunLoopTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunLoopTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4753FB620AC6F9B0087A00B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4753FB720AC6F9B0087A00B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +83,10 @@
 				E4753FC520AC6F9C0087A00B /* main.m */,
 				E4753FCF20AC8FDC0087A00B /* TViewController.h */,
 				E4753FD020AC8FDC0087A00B /* TViewController.m */,
+				B98E7AF620AD18BB00B8EE03 /* RunLoopObserver.h */,
+				B98E7AF720AD18BB00B8EE03 /* RunLoopObserver.m */,
+				B98E7AF920AD2B4200B8EE03 /* Test2.h */,
+				B98E7AFA20AD2B4200B8EE03 /* Test2.m */,
 			);
 			path = RunLoopTest;
 			sourceTree = "<group>";
@@ -152,9 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4753FBB20AC6F9B0087A00B /* ViewController.m in Sources */,
+				B98E7AF820AD18BB00B8EE03 /* RunLoopObserver.m in Sources */,
 				E4753FC620AC6F9C0087A00B /* main.m in Sources */,
 				E4753FD120AC8FDC0087A00B /* TViewController.m in Sources */,
 				E4753FB820AC6F9B0087A00B /* AppDelegate.m in Sources */,
+				B98E7AFB20AD2B4200B8EE03 /* Test2.m in Sources */,
 				E4753FCE20AC71400087A00B /* TestThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
